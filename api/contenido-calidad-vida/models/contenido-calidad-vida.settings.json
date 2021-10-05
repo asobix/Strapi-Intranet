@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contenido_calidad_vidas",
+  "info": {
+    "name": "ContenidoGestionHumana",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gestion_humana": {
+      "via": "contenido_calidad_vidas",
+      "model": "gestion-humana"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "order_section": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ListaOpciones": {
+      "type": "enumeration",
+      "enum": [
+        "IMAGEN",
+        "PARRAFO",
+        "PARRAFO_IMAGEN_DERECHA",
+        "PARRAFO_IMAGEN_IZQUIERDA"
+      ],
+      "required": true
+    }
+  }
+}

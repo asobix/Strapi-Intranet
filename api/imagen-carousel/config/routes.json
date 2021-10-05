@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/imagen-carousels",
+      "handler": "imagen-carousel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/imagen-carousels/count",
+      "handler": "imagen-carousel.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/imagen-carousels/:id",
+      "handler": "imagen-carousel.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/imagen-carousels",
+      "handler": "imagen-carousel.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/imagen-carousels/:id",
+      "handler": "imagen-carousel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/imagen-carousels/:id",
+      "handler": "imagen-carousel.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

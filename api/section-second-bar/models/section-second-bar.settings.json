@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_second_bars",
+  "info": {
+    "name": "SectionSecondBar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

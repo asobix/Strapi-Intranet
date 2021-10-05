@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contenido_noticias_sections",
+  "info": {
+    "name": "ContenidoNoticiasSections"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paragraph": {
+      "type": "text"
+    },
+    "order_section": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ListaOpciones": {
+      "type": "enumeration",
+      "enum": [
+        "IMAGEN",
+        "PARRAFO",
+        "PARRAFO_IMAGEN_DERECHA",
+        "PARRAFO_IMAGEN_IZQUIERDA"
+      ],
+      "required": true
+    },
+    "noticias_section": {
+      "via": "contenido_noticias_sections",
+      "model": "noticias-section"
+    }
+  }
+}
