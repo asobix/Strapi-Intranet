@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "section_second_bars",
+  "collectionName": "navbar_gestion_humanas",
   "info": {
-    "name": "SectionSecondBar"
+    "name": "NavbarGestionHumana"
   },
   "options": {
     "increments": true,
@@ -12,6 +12,9 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
+      "type": "string"
+    },
+    "url": {
       "type": "string"
     }
   }
