@@ -1,7 +1,0 @@
-GET http://localhost:1337/intranets
-
-###
-GET http://localhost:1337/imagen-carousels
-
-###
-GET  http://localhost:1337/imagen-carousels/count/2
