@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "pills_promociones",
+  "collectionName": "imagen_carousels",
   "info": {
-    "name": "PillsPromociones"
+    "name": "ImagenCarousels"
   },
   "options": {
     "increments": true,
@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "avatar": {
+    "carousel": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -22,20 +22,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "name": {
-      "type": "string"
-    },
-    "post": {
-      "type": "string"
-    },
-    "date": {
-      "type": "string"
-    },
-    "order_section": {
-      "type": "integer",
-      "default": 1,
-      "required": true
     }
   }
 }

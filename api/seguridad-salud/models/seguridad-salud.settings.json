@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "seguridad_saluds",
   "info": {
-    "name": "SeguridadSalud",
-    "description": ""
+    "name": "SeguridadSalud"
   },
   "options": {
     "increments": true,
@@ -33,14 +32,14 @@
     "url": {
       "type": "string"
     },
-    "contenido_seguridad_saluds": {
-      "via": "seguridad_salud",
-      "collection": "contenido-seguridad-salud"
-    },
     "order_section": {
       "type": "integer",
       "default": 1,
       "required": true
+    },
+    "contenido_seguridad_saluds": {
+      "via": "seguridad_salud",
+      "collection": "contenido-seguridad-salud"
     }
   }
 }

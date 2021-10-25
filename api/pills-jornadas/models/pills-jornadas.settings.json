@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "pills_jornadas",
   "info": {
-    "name": "PillsJornadas",
-    "description": ""
+    "name": "PillsJornadas"
   },
   "options": {
     "increments": true,

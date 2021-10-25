@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "pills_graduaciones",
   "info": {
-    "name": "PillsGraduaciones",
-    "description": ""
+    "name": "PillsGraduaciones"
   },
   "options": {
     "increments": true,
@@ -40,8 +39,7 @@
       "type": "string"
     },
     "list1": {
-      "type": "richtext",
-      "required": false
+      "type": "richtext"
     },
     "date": {
       "type": "string"

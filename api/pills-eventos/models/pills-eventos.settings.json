@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "pills_eventos",
   "info": {
-    "name": "PillsEventos",
-    "description": ""
+    "name": "PillsEventos"
   },
   "options": {
     "increments": true,

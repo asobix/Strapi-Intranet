@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "pills_cumpleanos",
   "info": {
-    "name": "PillsCumpleaños",
-    "description": ""
+    "name": "PillsCumpleaños"
   },
   "options": {
     "increments": true,
@@ -12,6 +11,9 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "name": {
+      "type": "string"
+    },
     "avatar": {
       "model": "file",
       "via": "related",
@@ -24,9 +26,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "name": {
-      "type": "string"
-    },
     "department": {
       "type": "string"
     },
@@ -35,8 +34,8 @@
     },
     "order_section": {
       "type": "integer",
-      "default": 1,
-      "required": true
+      "required": true,
+      "default": 1
     }
   }
 }

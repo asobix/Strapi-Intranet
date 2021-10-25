@@ -42,8 +42,8 @@
       "required": true
     },
     "seguridad_salud": {
-      "via": "contenido_seguridad_saluds",
-      "model": "seguridad-salud"
+      "model": "seguridad-salud",
+      "via": "contenido_seguridad_saluds"
     }
   }
 }

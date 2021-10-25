@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "enlaces_intereses",
   "info": {
-    "name": "EnlacesIntereses",
-    "description": ""
+    "name": "EnlacesIntereses"
   },
   "options": {
     "increments": true,
@@ -12,6 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
     "logo": {
       "model": "file",
       "via": "related",
@@ -23,12 +28,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
     },
     "twiter": {
       "type": "string"

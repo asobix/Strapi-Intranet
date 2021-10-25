@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "section_aliados",
+  "collectionName": "pills_actividades",
   "info": {
-    "name": "SectionAliados"
+    "name": "PillsActividades"
   },
   "options": {
     "increments": true,
@@ -11,7 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "logo": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -23,25 +26,22 @@
       "required": false,
       "pluginOptions": {}
     },
-    "title": {
-      "type": "string"
-    },
     "description": {
       "type": "text"
     },
-    "facebook": {
+    "url": {
       "type": "string"
     },
-    "twiter": {
+    "place": {
       "type": "string"
     },
-    "google": {
+    "day": {
       "type": "string"
     },
     "order_section": {
       "type": "integer",
-      "default": 1,
-      "required": true
+      "required": true,
+      "default": 1
     }
   }
 }

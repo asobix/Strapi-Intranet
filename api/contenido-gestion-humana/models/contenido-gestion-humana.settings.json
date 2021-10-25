@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "contenido_prevention_sections",
+  "collectionName": "contenido_gestion_humanas",
   "info": {
-    "name": "ContenidoPreventionSections"
+    "name": "ContenidoGestionHumana"
   },
   "options": {
     "increments": true,
@@ -41,9 +41,9 @@
       ],
       "required": true
     },
-    "prevention_section": {
-      "model": "prevention-section",
-      "via": "contenido_prevention_sections"
+    "gestion_humana": {
+      "model": "gestion-humana",
+      "via": "contenido_gestion_humanas"
     }
   }
 }

@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "prevention_sections",
   "info": {
-    "name": "PreventionSection",
-    "description": ""
+    "name": "PreventionSection"
   },
   "options": {
     "increments": true,
@@ -33,14 +32,14 @@
     "url": {
       "type": "string"
     },
-    "contenido_prevention_sections": {
-      "via": "prevention_section",
-      "collection": "contenido-prevention-sections"
-    },
     "order_section": {
       "type": "integer",
       "default": 1,
       "required": true
+    },
+    "contenido_prevention_sections": {
+      "via": "prevention_section",
+      "collection": "contenido-prevention-sections"
     }
   }
 }
